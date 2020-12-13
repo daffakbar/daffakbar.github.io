@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Blog Daffa</title>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+		rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav class="bg-white navbar navbar-toggleable-md navbar-light fixed-top mediumnavigation">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+			data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="container">
+
+			<a class="navbar-brand" href="index.html">
+
+				<h2>Blog</h2>
+			</a>
+
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="ml-auto navbar-nav">
+
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Post</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Author</a>
+					</li>
+				</ul>
+				<form class="my-2 form-inline my-lg-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+					<span class="search-icon"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
+							<path
+								d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z">
+							</path>
+						</svg></span>
+				</form>
+
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+
+			<!-- Begin Fixed Left Share -->
+			<div class="col-md-2 col-xs-12">
+
+			</div>
+			<div class="col-md-8 col-md-offset-2 col-xs-12">
+				<div class="mainheading">
+
+					<h1 class="posttitle">Conflict Repository</h1>
+
+				</div>
+
+
+				<img class="featured-image img-fluid" src="assets/img/merge.jpg" alt="">
+
+				<div class="article-post">
+					<p>
+						<h4><b>Penyebab terjadinya conflict pada git.</b></h4> <br>
+						Conflict pada git terjadi karena adanya mengubah, menghapus, menambahkan baris baru pada file yg
+						sama.
+						<br>
+						seperti contoh berikut : <br>
+						dari branch master kita menambahkan code pada baris 5
+						<img src="/assets/img/conflict/1.PNG" alt="">
+						<br>
+						lalu dari branch "test" kita tambahkan juga code pada baris 5
+						<img src="/assets/img/conflict/2.PNG" alt="">
+						<br>
+						maka saat akan di merge akan terjadi conflict berikut.
+						<img src="/assets/img/conflict/3.PNG" width="300" alt="">
+					</p>
+					<p>
+						<h4><b>Cara menghindari conflict.</b></h4> <br>
+						<ul>
+							<li>sebelum melakukan coding lebih baik melakukan merge ke master agar update jika adanya
+								perubahan baru</li>
+							<li>melakukan komunikasi pembagian file/tugas dengan team</li>
+						</ul>
+					</p>
+					<p>
+						<h4><b>Apa yang harus dilakukan apabila terjadi conflict.</b></h4> <br>
+						<img src="/assets/img/conflict/8.PNG" alt="">
+						<br>
+						saat terjadi conflict maka terdapat beberapa pilihan berikut :
+						<ul>
+							<li>Accept Current Change </li>
+							<li>Accept Incoming Change </li>
+							<li>Accept Both Change </li>
+							<li>Compare Change </li>
+						</ul>
+						jika kalian memlih <b>Accept Current Change</b> maka kalian akan memakai code pada branch test.
+						<br>
+						<img src="/assets/img/conflict/4.PNG" alt=""> <br>
+						jika kalian memlih <b>Accept Incoming Change</b> maka kalian akan memakai code pada branch
+						master. <br>
+						<img src="/assets/img/conflict/7.PNG" alt=""> <br>
+						jika kalian memlih <b>Accept Both Change</b> maka kalian akan memakai keseluruhan code tanpa
+						menghapus salah satunya. <br>
+						<img src="/assets/img/conflict/6.PNG" alt=""> <br>
+						jika kalian memlih <b>Compare Change</b> maka kalian akan diperlihatkan code dari branch test
+						dan master <br>
+						<img src="/assets/img/conflict/5.PNG" alt="">
+					</p>
+					<p>
+						jangan lupa setelah kalian selesai memilih lakukan ini
+					</p>
+					<blockquote>
+						git add . <br>
+						git commit -m "comment"
+					</blockquote>
+					<hr>
+
+				</div>
+
+				<div class="after-post-tags">
+					<ul class="tags">
+						<li><a href="#">VCS</a></li>
+						<li><a href="#">Git</a></li>
+						<li><a href="#">Github</a></li>
+						<li><a href="#">Programmer</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hideshare"></div>
+	<div class="container">
+		<div class="footer">
+			<p class="pull-left">
+				Copyright &copy; 2020 Blog Daffa
+			</p>
+			<p class="pull-right">
+
+			</p>
+			<div class="clearfix">
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
